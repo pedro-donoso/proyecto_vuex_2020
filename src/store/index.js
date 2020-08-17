@@ -820,7 +820,22 @@ export default new Vuex.Store({
 
   },
 
-  mutations: {},
+  mutations: {
+
+    SET_QUERY(state, query) {
+      state.filters.query = query;
+    },
+
+    SET_AVAILABLE(state) {
+      state.filters.available = !state.filters.available;
+    }
+
+  },
+
+  getters: {
+
+  },
+
   actions: {},
   modules: {},
 });
