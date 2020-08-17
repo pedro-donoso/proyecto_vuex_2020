@@ -833,9 +833,12 @@ export default new Vuex.Store({
   },
 
   getters: {
-
-  },
-
-  actions: {},
-  modules: {},
+    filteredMovies(state) {
+      let movies = state.movies.filter(movie => movie.available === state.filter.available);
+      if (state.filter.query.length > 2) {
+        return movies.filter(movie => movie.title.toLowerCase().includes(state.filter.query));
+      }
+      return movies;
+    }
+  }
 });
