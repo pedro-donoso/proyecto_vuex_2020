@@ -2,7 +2,7 @@
   <div class="row">
     <div class="col">
       <div class="form-group mb-2">
-        <label class="sr-only">Escribe tu búsqueda</label>
+        <label class="sr-only">Escribe tus busquedas</label>
         <input type="text" v-model="search" class="form-control" />
       </div>
 
@@ -32,7 +32,32 @@
 </template>
 
 <script>
-export default {};
+export default {
+
+  computed: {
+    search: {
+      get(){
+        return this.$store.state.filter.query;
+      },
+
+      set(val){
+        this.$store.commit('SET_QUERY', val);
+      }
+    },
+
+    available: {
+      get() {
+         this.$store.state.filter.available;
+      },
+      set() {
+        this.$store.commit('SET_AVAILABLE');
+      }
+    }
+
+
+  },
+
+};
 </script>
 
 <style></style>
