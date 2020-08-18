@@ -1,6 +1,6 @@
 <template>
-  <div class="row">
-  
+  <div class="row" v-if="movies.lenght > 0">
+    <movie :movie="movie" v-for="movie in movies" :key="movie.id"></movie>
   </div>
 </template>
 
