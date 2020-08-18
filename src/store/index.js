@@ -4,841 +4,640 @@ import Vuex from "vuex";
 Vue.use(Vuex);
 
 const movies = () => {
-  return [
-    {
-      id: 1,
-      first_name: "Stuart",
-      last_name: "Reder",
-      email: "sreder0@cnbc.com",
-      gender: "Male",
-      ip_address: "41.2.220.117",
-    },
-    {
-      id: 2,
-      first_name: "Caspar",
-      last_name: "Brigdale",
-      email: "cbrigdale1@elegantthemes.com",
-      gender: "Male",
-      ip_address: "185.44.175.37",
-    },
-    {
-      id: 3,
-      first_name: "Billie",
-      last_name: "Mellsop",
-      email: "bmellsop2@nps.gov",
-      gender: "Male",
-      ip_address: "92.11.209.189",
-    },
-    {
-      id: 4,
-      first_name: "Linnet",
-      last_name: "Simonel",
-      email: "lsimonel3@google.cn",
-      gender: "Female",
-      ip_address: "139.118.242.11",
-    },
-    {
-      id: 5,
-      first_name: "Paloma",
-      last_name: "McGillreich",
-      email: "pmcgillreich4@eventbrite.com",
-      gender: "Female",
-      ip_address: "240.216.216.133",
-    },
-    {
-      id: 6,
-      first_name: "Lorita",
-      last_name: "Gummie",
-      email: "lgummie5@blinklist.com",
-      gender: "Female",
-      ip_address: "249.43.125.182",
-    },
-    {
-      id: 7,
-      first_name: "Gaile",
-      last_name: "Oxberry",
-      email: "goxberry6@economist.com",
-      gender: "Male",
-      ip_address: "111.216.64.154",
-    },
-    {
-      id: 8,
-      first_name: "Vern",
-      last_name: "Maddinon",
-      email: "vmaddinon7@cloudflare.com",
-      gender: "Male",
-      ip_address: "51.208.60.170",
-    },
-    {
-      id: 9,
-      first_name: "Dani",
-      last_name: "Partner",
-      email: "dpartner8@ucoz.com",
-      gender: "Female",
-      ip_address: "225.199.153.80",
-    },
-    {
-      id: 10,
-      first_name: "Esta",
-      last_name: "William",
-      email: "ewilliam9@ustream.tv",
-      gender: "Female",
-      ip_address: "120.143.4.186",
-    },
-    {
-      id: 11,
-      first_name: "Wandis",
-      last_name: "Ezele",
-      email: "wezelea@imageshack.us",
-      gender: "Female",
-      ip_address: "135.1.215.173",
-    },
-    {
-      id: 12,
-      first_name: "Way",
-      last_name: "Crut",
-      email: "wcrutb@bluehost.com",
-      gender: "Male",
-      ip_address: "129.17.237.167",
-    },
-    {
-      id: 13,
-      first_name: "Isaiah",
-      last_name: "Decreuze",
-      email: "idecreuzec@icio.us",
-      gender: "Male",
-      ip_address: "240.30.121.175",
-    },
-    {
-      id: 14,
-      first_name: "Kipper",
-      last_name: "Redmain",
-      email: "kredmaind@clickbank.net",
-      gender: "Male",
-      ip_address: "18.12.154.195",
-    },
-    {
-      id: 15,
-      first_name: "Vitoria",
-      last_name: "Dartnall",
-      email: "vdartnalle@mlb.com",
-      gender: "Female",
-      ip_address: "84.107.111.100",
-    },
-    {
-      id: 16,
-      first_name: "Yehudi",
-      last_name: "Le Jean",
-      email: "ylejeanf@deliciousdays.com",
-      gender: "Male",
-      ip_address: "27.2.14.212",
-    },
-    {
-      id: 17,
-      first_name: "Berti",
-      last_name: "Norledge",
-      email: "bnorledgeg@admin.ch",
-      gender: "Male",
-      ip_address: "80.63.160.155",
-    },
-    {
-      id: 18,
-      first_name: "Beale",
-      last_name: "Brassill",
-      email: "bbrassillh@ftc.gov",
-      gender: "Male",
-      ip_address: "105.197.181.56",
-    },
-    {
-      id: 19,
-      first_name: "Ava",
-      last_name: "Rollingson",
-      email: "arollingsoni@usnews.com",
-      gender: "Female",
-      ip_address: "127.26.33.1",
-    },
-    {
-      id: 20,
-      first_name: "Tracey",
-      last_name: "Doutch",
-      email: "tdoutchj@xrea.com",
-      gender: "Male",
-      ip_address: "118.152.224.84",
-    },
-    {
-      id: 21,
-      first_name: "Eveleen",
-      last_name: "Barribal",
-      email: "ebarribalk@infoseek.co.jp",
-      gender: "Female",
-      ip_address: "188.0.105.98",
-    },
-    {
-      id: 22,
-      first_name: "Dionis",
-      last_name: "Blewitt",
-      email: "dblewittl@odnoklassniki.ru",
-      gender: "Female",
-      ip_address: "187.119.8.10",
-    },
-    {
-      id: 23,
-      first_name: "Corina",
-      last_name: "Coutthart",
-      email: "ccoutthartm@github.io",
-      gender: "Female",
-      ip_address: "220.88.69.210",
-    },
-    {
-      id: 24,
-      first_name: "Petey",
-      last_name: "Abbes",
-      email: "pabbesn@mapy.cz",
-      gender: "Male",
-      ip_address: "43.10.9.148",
-    },
-    {
-      id: 25,
-      first_name: "Mair",
-      last_name: "Kydde",
-      email: "mkyddeo@phoca.cz",
-      gender: "Female",
-      ip_address: "81.12.227.228",
-    },
-    {
-      id: 26,
-      first_name: "Westbrooke",
-      last_name: "Ervine",
-      email: "wervinep@meetup.com",
-      gender: "Male",
-      ip_address: "194.148.15.146",
-    },
-    {
-      id: 27,
-      first_name: "Avigdor",
-      last_name: "Aspling",
-      email: "aasplingq@cisco.com",
-      gender: "Male",
-      ip_address: "224.236.106.74",
-    },
-    {
-      id: 28,
-      first_name: "Bart",
-      last_name: "Crinion",
-      email: "bcrinionr@nih.gov",
-      gender: "Male",
-      ip_address: "167.56.195.246",
-    },
-    {
-      id: 29,
-      first_name: "Dieter",
-      last_name: "Shackelton",
-      email: "dshackeltons@wsj.com",
-      gender: "Male",
-      ip_address: "146.245.76.148",
-    },
-    {
-      id: 30,
-      first_name: "Clemmy",
-      last_name: "Muddicliffe",
-      email: "cmuddicliffet@marketwatch.com",
-      gender: "Male",
-      ip_address: "247.251.165.78",
-    },
-    {
-      id: 31,
-      first_name: "Pacorro",
-      last_name: "Rugge",
-      email: "pruggeu@dyndns.org",
-      gender: "Male",
-      ip_address: "89.140.193.153",
-    },
-    {
-      id: 32,
-      first_name: "Alicea",
-      last_name: "MacAdam",
-      email: "amacadamv@dmoz.org",
-      gender: "Female",
-      ip_address: "228.40.125.203",
-    },
-    {
-      id: 33,
-      first_name: "Dudley",
-      last_name: "Berwick",
-      email: "dberwickw@artisteer.com",
-      gender: "Male",
-      ip_address: "146.255.216.82",
-    },
-    {
-      id: 34,
-      first_name: "Violante",
-      last_name: "Jodlkowski",
-      email: "vjodlkowskix@bizjournals.com",
-      gender: "Female",
-      ip_address: "80.232.165.187",
-    },
-    {
-      id: 35,
-      first_name: "Gradey",
-      last_name: "Killock",
-      email: "gkillocky@chronoengine.com",
-      gender: "Male",
-      ip_address: "122.36.181.5",
-    },
-    {
-      id: 36,
-      first_name: "Fitz",
-      last_name: "Howels",
-      email: "fhowelsz@dailymotion.com",
-      gender: "Male",
-      ip_address: "185.163.108.116",
-    },
-    {
-      id: 37,
-      first_name: "Gerri",
-      last_name: "Endean",
-      email: "gendean10@themeforest.net",
-      gender: "Male",
-      ip_address: "202.240.13.25",
-    },
-    {
-      id: 38,
-      first_name: "Whitaker",
-      last_name: "Coad",
-      email: "wcoad11@nature.com",
-      gender: "Male",
-      ip_address: "97.129.224.242",
-    },
-    {
-      id: 39,
-      first_name: "Putnem",
-      last_name: "Chazotte",
-      email: "pchazotte12@tuttocitta.it",
-      gender: "Male",
-      ip_address: "217.251.153.127",
-    },
-    {
-      id: 40,
-      first_name: "Max",
-      last_name: "Strutz",
-      email: "mstrutz13@ovh.net",
-      gender: "Male",
-      ip_address: "81.52.114.114",
-    },
-    {
-      id: 41,
-      first_name: "Cedric",
-      last_name: "Spilsburie",
-      email: "cspilsburie14@flavors.me",
-      gender: "Male",
-      ip_address: "63.49.6.48",
-    },
-    {
-      id: 42,
-      first_name: "Lorraine",
-      last_name: "Gisby",
-      email: "lgisby15@berkeley.edu",
-      gender: "Female",
-      ip_address: "226.50.103.156",
-    },
-    {
-      id: 43,
-      first_name: "Nanon",
-      last_name: "Deares",
-      email: "ndeares16@newsvine.com",
-      gender: "Female",
-      ip_address: "47.109.163.216",
-    },
-    {
-      id: 44,
-      first_name: "Brew",
-      last_name: "Blacket",
-      email: "bblacket17@dedecms.com",
-      gender: "Male",
-      ip_address: "153.111.11.119",
-    },
-    {
-      id: 45,
-      first_name: "Angel",
-      last_name: "Joplin",
-      email: "ajoplin18@hc360.com",
-      gender: "Male",
-      ip_address: "181.86.150.163",
-    },
-    {
-      id: 46,
-      first_name: "Theodor",
-      last_name: "Bromhead",
-      email: "tbromhead19@ask.com",
-      gender: "Male",
-      ip_address: "194.233.85.7",
-    },
-    {
-      id: 47,
-      first_name: "Gillian",
-      last_name: "Stubs",
-      email: "gstubs1a@sphinn.com",
-      gender: "Female",
-      ip_address: "167.140.181.95",
-    },
-    {
-      id: 48,
-      first_name: "Jaye",
-      last_name: "Winders",
-      email: "jwinders1b@forbes.com",
-      gender: "Male",
-      ip_address: "246.39.74.14",
-    },
-    {
-      id: 49,
-      first_name: "Nealson",
-      last_name: "McDermott",
-      email: "nmcdermott1c@xinhuanet.com",
-      gender: "Male",
-      ip_address: "27.140.21.218",
-    },
-    {
-      id: 50,
-      first_name: "Felicdad",
-      last_name: "Likly",
-      email: "flikly1d@answers.com",
-      gender: "Female",
-      ip_address: "9.122.21.70",
-    },
-    {
-      id: 51,
-      first_name: "Zared",
-      last_name: "Gotcliff",
-      email: "zgotcliff1e@diigo.com",
-      gender: "Male",
-      ip_address: "129.202.151.15",
-    },
-    {
-      id: 52,
-      first_name: "Solomon",
-      last_name: "Hoys",
-      email: "shoys1f@msn.com",
-      gender: "Male",
-      ip_address: "153.252.151.153",
-    },
-    {
-      id: 53,
-      first_name: "Homer",
-      last_name: "Benham",
-      email: "hbenham1g@bloglovin.com",
-      gender: "Male",
-      ip_address: "92.62.61.181",
-    },
-    {
-      id: 54,
-      first_name: "Raddy",
-      last_name: "Menichi",
-      email: "rmenichi1h@reddit.com",
-      gender: "Male",
-      ip_address: "117.61.170.133",
-    },
-    {
-      id: 55,
-      first_name: "Ludwig",
-      last_name: "Showl",
-      email: "lshowl1i@jalbum.net",
-      gender: "Male",
-      ip_address: "43.18.225.192",
-    },
-    {
-      id: 56,
-      first_name: "Jacquelyn",
-      last_name: "Halbard",
-      email: "jhalbard1j@issuu.com",
-      gender: "Female",
-      ip_address: "147.44.223.20",
-    },
-    {
-      id: 57,
-      first_name: "Mahmud",
-      last_name: "Lantuffe",
-      email: "mlantuffe1k@bloglovin.com",
-      gender: "Male",
-      ip_address: "134.244.146.35",
-    },
-    {
-      id: 58,
-      first_name: "Toni",
-      last_name: "Burnand",
-      email: "tburnand1l@dyndns.org",
-      gender: "Female",
-      ip_address: "234.220.63.5",
-    },
-    {
-      id: 59,
-      first_name: "Berni",
-      last_name: "Sigg",
-      email: "bsigg1m@nhs.uk",
-      gender: "Female",
-      ip_address: "57.92.6.95",
-    },
-    {
-      id: 60,
-      first_name: "Vivie",
-      last_name: "Cockton",
-      email: "vcockton1n@oakley.com",
-      gender: "Female",
-      ip_address: "104.235.81.159",
-    },
-    {
-      id: 61,
-      first_name: "Derril",
-      last_name: "Causby",
-      email: "dcausby1o@fema.gov",
-      gender: "Male",
-      ip_address: "45.149.132.150",
-    },
-    {
-      id: 62,
-      first_name: "Harlan",
-      last_name: "Leport",
-      email: "hleport1p@example.com",
-      gender: "Male",
-      ip_address: "172.54.205.4",
-    },
-    {
-      id: 63,
-      first_name: "Casper",
-      last_name: "O'Bradain",
-      email: "cobradain1q@answers.com",
-      gender: "Male",
-      ip_address: "182.109.242.195",
-    },
-    {
-      id: 64,
-      first_name: "Rice",
-      last_name: "Duffill",
-      email: "rduffill1r@toplist.cz",
-      gender: "Male",
-      ip_address: "36.156.79.131",
-    },
-    {
-      id: 65,
-      first_name: "Adara",
-      last_name: "Duthy",
-      email: "aduthy1s@newyorker.com",
-      gender: "Female",
-      ip_address: "30.108.85.166",
-    },
-    {
-      id: 66,
-      first_name: "Marin",
-      last_name: "Fiddymont",
-      email: "mfiddymont1t@fda.gov",
-      gender: "Female",
-      ip_address: "227.210.144.218",
-    },
-    {
-      id: 67,
-      first_name: "Alwin",
-      last_name: "O'Loughane",
-      email: "aoloughane1u@squidoo.com",
-      gender: "Male",
-      ip_address: "47.231.208.120",
-    },
-    {
-      id: 68,
-      first_name: "Jacinta",
-      last_name: "Magnus",
-      email: "jmagnus1v@bluehost.com",
-      gender: "Female",
-      ip_address: "0.227.22.124",
-    },
-    {
-      id: 69,
-      first_name: "Bradney",
-      last_name: "Such",
-      email: "bsuch1w@smh.com.au",
-      gender: "Male",
-      ip_address: "114.96.30.33",
-    },
-    {
-      id: 70,
-      first_name: "Raviv",
-      last_name: "Jahnig",
-      email: "rjahnig1x@ibm.com",
-      gender: "Male",
-      ip_address: "126.73.140.70",
-    },
-    {
-      id: 71,
-      first_name: "Quinn",
-      last_name: "Belden",
-      email: "qbelden1y@sbwire.com",
-      gender: "Male",
-      ip_address: "255.94.49.19",
-    },
-    {
-      id: 72,
-      first_name: "Lorie",
-      last_name: "Myles",
-      email: "lmyles1z@boston.com",
-      gender: "Female",
-      ip_address: "191.106.50.229",
-    },
-    {
-      id: 73,
-      first_name: "Karen",
-      last_name: "Bond",
-      email: "kbond20@columbia.edu",
-      gender: "Female",
-      ip_address: "240.22.48.186",
-    },
-    {
-      id: 74,
-      first_name: "Jobi",
-      last_name: "Corley",
-      email: "jcorley21@mozilla.org",
-      gender: "Female",
-      ip_address: "130.147.137.73",
-    },
-    {
-      id: 75,
-      first_name: "Cyndi",
-      last_name: "Lacase",
-      email: "clacase22@ebay.co.uk",
-      gender: "Female",
-      ip_address: "211.184.241.39",
-    },
-    {
-      id: 76,
-      first_name: "Erminia",
-      last_name: "Clatworthy",
-      email: "eclatworthy23@google.it",
-      gender: "Female",
-      ip_address: "96.21.232.10",
-    },
-    {
-      id: 77,
-      first_name: "Tait",
-      last_name: "Achromov",
-      email: "tachromov24@imageshack.us",
-      gender: "Male",
-      ip_address: "94.99.231.147",
-    },
-    {
-      id: 78,
-      first_name: "Nathanael",
-      last_name: "Kohler",
-      email: "nkohler25@github.com",
-      gender: "Male",
-      ip_address: "67.216.132.42",
-    },
-    {
-      id: 79,
-      first_name: "Annabal",
-      last_name: "Tommei",
-      email: "atommei26@sourceforge.net",
-      gender: "Female",
-      ip_address: "113.71.92.202",
-    },
-    {
-      id: 80,
-      first_name: "Bobbee",
-      last_name: "Pendock",
-      email: "bpendock27@dmoz.org",
-      gender: "Female",
-      ip_address: "213.213.119.15",
-    },
-    {
-      id: 81,
-      first_name: "Delmer",
-      last_name: "Keymer",
-      email: "dkeymer28@chron.com",
-      gender: "Male",
-      ip_address: "71.211.139.124",
-    },
-    {
-      id: 82,
-      first_name: "Bryna",
-      last_name: "Merricks",
-      email: "bmerricks29@scribd.com",
-      gender: "Female",
-      ip_address: "1.100.8.115",
-    },
-    {
-      id: 83,
-      first_name: "Ivory",
-      last_name: "Cann",
-      email: "icann2a@dedecms.com",
-      gender: "Female",
-      ip_address: "100.233.123.251",
-    },
-    {
-      id: 84,
-      first_name: "Zenia",
-      last_name: "Cornewall",
-      email: "zcornewall2b@businesswire.com",
-      gender: "Female",
-      ip_address: "32.101.169.80",
-    },
-    {
-      id: 85,
-      first_name: "Neron",
-      last_name: "Messent",
-      email: "nmessent2c@intel.com",
-      gender: "Male",
-      ip_address: "122.109.145.156",
-    },
-    {
-      id: 86,
-      first_name: "Bendicty",
-      last_name: "Ivens",
-      email: "bivens2d@privacy.gov.au",
-      gender: "Male",
-      ip_address: "24.120.203.175",
-    },
-    {
-      id: 87,
-      first_name: "Nigel",
-      last_name: "Nuss",
-      email: "nnuss2e@hc360.com",
-      gender: "Male",
-      ip_address: "153.159.34.143",
-    },
-    {
-      id: 88,
-      first_name: "Fedora",
-      last_name: "Boyfield",
-      email: "fboyfield2f@dot.gov",
-      gender: "Female",
-      ip_address: "16.169.230.191",
-    },
-    {
-      id: 89,
-      first_name: "Corbet",
-      last_name: "Jina",
-      email: "cjina2g@artisteer.com",
-      gender: "Male",
-      ip_address: "6.104.247.249",
-    },
-    {
-      id: 90,
-      first_name: "Audre",
-      last_name: "Saltern",
-      email: "asaltern2h@yellowpages.com",
-      gender: "Female",
-      ip_address: "80.188.217.167",
-    },
-    {
-      id: 91,
-      first_name: "Bruis",
-      last_name: "Hans",
-      email: "bhans2i@cyberchimps.com",
-      gender: "Male",
-      ip_address: "93.57.235.239",
-    },
-    {
-      id: 92,
-      first_name: "Sisely",
-      last_name: "Guitel",
-      email: "sguitel2j@about.me",
-      gender: "Female",
-      ip_address: "127.77.194.119",
-    },
-    {
-      id: 93,
-      first_name: "Marylynne",
-      last_name: "Yurshev",
-      email: "myurshev2k@yale.edu",
-      gender: "Female",
-      ip_address: "151.216.55.234",
-    },
-    {
-      id: 94,
-      first_name: "Goober",
-      last_name: "Escritt",
-      email: "gescritt2l@squidoo.com",
-      gender: "Male",
-      ip_address: "154.100.216.53",
-    },
-    {
-      id: 95,
-      first_name: "Rudiger",
-      last_name: "Sachno",
-      email: "rsachno2m@diigo.com",
-      gender: "Male",
-      ip_address: "152.147.252.242",
-    },
-    {
-      id: 96,
-      first_name: "Tanney",
-      last_name: "Crispe",
-      email: "tcrispe2n@unblog.fr",
-      gender: "Male",
-      ip_address: "237.221.180.199",
-    },
-    {
-      id: 97,
-      first_name: "Phil",
-      last_name: "Brunotti",
-      email: "pbrunotti2o@admin.ch",
-      gender: "Female",
-      ip_address: "149.204.170.167",
-    },
-    {
-      id: 98,
-      first_name: "Ingram",
-      last_name: "Lundberg",
-      email: "ilundberg2p@ameblo.jp",
-      gender: "Male",
-      ip_address: "139.51.6.199",
-    },
-    {
-      id: 99,
-      first_name: "Leontyne",
-      last_name: "Baines",
-      email: "lbaines2q@google.ru",
-      gender: "Female",
-      ip_address: "73.239.114.35",
-    },
-    {
-      id: 100,
-      first_name: "Byrle",
-      last_name: "Roubay",
-      email: "broubay2r@privacy.gov.au",
-      gender: "Male",
-      ip_address: "3.59.174.11",
-    },
-  ];
-};
-
-export default new Vuex.Store({
-  state: {
-
-    movies: movies(),
-
-    filter: {
-      query: '',
-      available: true
-    }
-
+  return [{
+    "id": 1,
+    "title": "Inside",
+    "description": "vestibulum sit amet cursus id turpis integer aliquet massa id lobortis",
+    "available": true
   },
-
-  mutations: {
-
-    SET_QUERY(state, query) {
-      state.filter.query = query;
-    },
-
-    SET_AVAILABLE(state) {
-      state.filter.available = !state.filter.available;
-    }
-
+  {
+    "id": 2,
+    "title": "Syrian Bride, The",
+    "description": "augue aliquam erat volutpat in congue etiam justo etiam pretium",
+    "available": true
   },
-
-  getters: {
-    filteredMovies(state) {
-      let movies = state.movies.filter(movie => movie.available === state.filter.available);
-      if (state.filter.query.length > 2) {
-        return movies.filter(movie => movie.title.toLowerCase().includes(state.filter.query));
-      }
-      return movies;
-    }
+  {
+    "id": 3,
+    "title": "Big Bird Cage, The",
+    "description": "risus semper porta volutpat quam pede lobortis ligula sit amet eleifend pede libero quis orci nullam molestie nibh in",
+    "available": true
+  },
+  {
+    "id": 4,
+    "title": "Recollections of the Yellow House (Recordações da Casa Amarela)",
+    "description": "volutpat quam pede lobortis ligula sit amet eleifend pede libero quis orci nullam molestie nibh in lectus pellentesque at nulla",
+    "available": false
+  },
+  {
+    "id": 5,
+    "title": "Old Boy",
+    "description": "sit amet sem fusce consequat nulla nisl nunc nisl duis bibendum",
+    "available": false
+  },
+  {
+    "id": 6,
+    "title": "Love on the Run (Amour en fuite, L')",
+    "description": "nulla facilisi cras non velit nec nisi vulputate nonummy maecenas",
+    "available": true
+  },
+  {
+    "id": 7,
+    "title": "Doomwatch",
+    "description": "eget tincidunt eget tempus vel pede morbi porttitor lorem id ligula suspendisse ornare consequat",
+    "available": false
+  },
+  {
+    "id": 8,
+    "title": "Airspeed",
+    "description": "in eleifend quam a odio in hac habitasse platea dictumst maecenas",
+    "available": false
+  },
+  {
+    "id": 9,
+    "title": "On Our Merry Way",
+    "description": "sollicitudin vitae consectetuer eget rutrum at lorem integer tincidunt ante vel ipsum praesent blandit lacinia",
+    "available": true
+  },
+  {
+    "id": 10,
+    "title": "Happiness Is a Warm Blanket, Charlie Brown",
+    "description": "erat nulla tempus vivamus in felis eu sapien cursus vestibulum proin eu mi nulla ac",
+    "available": false
+  },
+  {
+    "id": 11,
+    "title": "Cat from Outer Space, The",
+    "description": "erat eros viverra eget congue eget semper rutrum nulla nunc",
+    "available": true
+  },
+  {
+    "id": 12,
+    "title": "Melissa P.",
+    "description": "elit ac nulla sed vel enim sit amet nunc viverra dapibus nulla",
+    "available": false
+  },
+  {
+    "id": 13,
+    "title": "Another Year",
+    "description": "nisi nam ultrices libero non mattis pulvinar nulla pede ullamcorper augue",
+    "available": true
+  },
+  {
+    "id": 14,
+    "title": "Little Boy Blue",
+    "description": "ut at dolor quis odio consequat varius integer ac leo pellentesque ultrices",
+    "available": false
+  },
+  {
+    "id": 15,
+    "title": "Teeth",
+    "description": "at lorem integer tincidunt ante vel ipsum praesent blandit lacinia erat vestibulum sed magna at nunc",
+    "available": true
+  },
+  {
+    "id": 16,
+    "title": "Manon of the Spring",
+    "description": "primis in faucibus orci luctus et ultrices posuere cubilia curae",
+    "available": false
+  },
+  {
+    "id": 17,
+    "title": "Emperor of the North (Emperor of the North Pole)",
+    "description": "turpis sed ante vivamus tortor duis mattis egestas metus aenean fermentum",
+    "available": false
+  },
+  {
+    "id": 18,
+    "title": "Big Trail, The",
+    "description": "phasellus id sapien in sapien iaculis congue vivamus metus arcu adipiscing molestie hendrerit at vulputate vitae nisl aenean",
+    "available": false
+  },
+  {
+    "id": 19,
+    "title": "Tyler Perry's Daddy's Little Girls",
+    "description": "quisque porta volutpat erat quisque erat eros viverra eget congue eget semper rutrum nulla",
+    "available": false
+  },
+  {
+    "id": 20,
+    "title": "Day After Tomorrow, The",
+    "description": "est risus auctor sed tristique in tempus sit amet sem fusce consequat nulla nisl nunc nisl",
+    "available": false
+  },
+  {
+    "id": 21,
+    "title": "Pohjanmaa",
+    "description": "justo etiam pretium iaculis justo in hac habitasse platea dictumst etiam faucibus cursus urna ut tellus nulla ut erat",
+    "available": true
+  },
+  {
+    "id": 22,
+    "title": "Revolution #9",
+    "description": "bibendum morbi non quam nec dui luctus rutrum nulla tellus in sagittis dui vel nisl duis ac",
+    "available": true
+  },
+  {
+    "id": 23,
+    "title": "Vares: The Path of the Righteous Men (Vares - Kaidan tien kulkijat)",
+    "description": "magna bibendum imperdiet nullam orci pede venenatis non sodales sed tincidunt eu felis fusce posuere felis sed lacus",
+    "available": false
+  },
+  {
+    "id": 24,
+    "title": "That's Life!",
+    "description": "vivamus vel nulla eget eros elementum pellentesque quisque porta volutpat erat quisque erat eros viverra eget congue eget semper",
+    "available": true
+  },
+  {
+    "id": 25,
+    "title": "Rory O'Shea Was Here (Inside I'm Dancing)",
+    "description": "aliquam sit amet diam in magna bibendum imperdiet nullam orci",
+    "available": true
+  },
+  {
+    "id": 26,
+    "title": "Roula",
+    "description": "luctus et ultrices posuere cubilia curae duis faucibus accumsan odio curabitur convallis duis consequat dui nec",
+    "available": true
+  },
+  {
+    "id": 27,
+    "title": "Uncle Nino",
+    "description": "integer pede justo lacinia eget tincidunt eget tempus vel pede morbi porttitor lorem id ligula suspendisse ornare consequat lectus in",
+    "available": false
+  },
+  {
+    "id": 28,
+    "title": "Free Radicals:  A History of Experimental Film",
+    "description": "proin interdum mauris non ligula pellentesque ultrices phasellus id sapien",
+    "available": false
+  },
+  {
+    "id": 29,
+    "title": "Yamla Pagla Deewana 2",
+    "description": "ridiculus mus vivamus vestibulum sagittis sapien cum sociis natoque penatibus et magnis",
+    "available": false
+  },
+  {
+    "id": 30,
+    "title": "Mindscape of Alan Moore, The",
+    "description": "elementum ligula vehicula consequat morbi a ipsum integer a nibh in quis justo",
+    "available": false
+  },
+  {
+    "id": 31,
+    "title": "F/X",
+    "description": "tincidunt eget tempus vel pede morbi porttitor lorem id ligula suspendisse ornare consequat lectus in est risus auctor sed",
+    "available": false
+  },
+  {
+    "id": 32,
+    "title": "Lilo & Stitch",
+    "description": "nunc viverra dapibus nulla suscipit ligula in lacus curabitur at ipsum ac tellus semper interdum mauris ullamcorper",
+    "available": true
+  },
+  {
+    "id": 33,
+    "title": "House of Seven Corpses, The",
+    "description": "eget congue eget semper rutrum nulla nunc purus phasellus in felis donec semper sapien a",
+    "available": true
+  },
+  {
+    "id": 34,
+    "title": "Soldier of Orange (a.k.a. Survival Run) (Soldaat van Oranje)",
+    "description": "duis ac nibh fusce lacus purus aliquet at feugiat non pretium quis lectus suspendisse potenti",
+    "available": false
+  },
+  {
+    "id": 35,
+    "title": "Freakonomics",
+    "description": "blandit ultrices enim lorem ipsum dolor sit amet consectetuer adipiscing elit proin interdum mauris non",
+    "available": true
+  },
+  {
+    "id": 36,
+    "title": "Violet & Daisy",
+    "description": "et eros vestibulum ac est lacinia nisi venenatis tristique fusce congue diam id ornare imperdiet sapien urna pretium nisl",
+    "available": false
+  },
+  {
+    "id": 37,
+    "title": "Safe in Hell",
+    "description": "maecenas tristique est et tempus semper est quam pharetra magna ac",
+    "available": false
+  },
+  {
+    "id": 38,
+    "title": "The Dark Valley",
+    "description": "faucibus orci luctus et ultrices posuere cubilia curae duis faucibus accumsan odio",
+    "available": false
+  },
+  {
+    "id": 39,
+    "title": "Last Song, The",
+    "description": "ultrices posuere cubilia curae nulla dapibus dolor vel est donec odio justo sollicitudin",
+    "available": false
+  },
+  {
+    "id": 40,
+    "title": "Battle of the Warriors",
+    "description": "tristique in tempus sit amet sem fusce consequat nulla nisl nunc nisl duis bibendum",
+    "available": false
+  },
+  {
+    "id": 41,
+    "title": "Slumber Party '57",
+    "description": "dictumst etiam faucibus cursus urna ut tellus nulla ut erat id mauris vulputate elementum nullam",
+    "available": false
+  },
+  {
+    "id": 42,
+    "title": "Excuse Me Darling, But Lucas Loved Me",
+    "description": "mollis molestie lorem quisque ut erat curabitur gravida nisi at nibh in hac habitasse platea dictumst aliquam augue quam",
+    "available": true
+  },
+  {
+    "id": 43,
+    "title": "Kevin & Perry Go Large",
+    "description": "ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae mauris viverra diam",
+    "available": true
+  },
+  {
+    "id": 44,
+    "title": "Beat That My Heart Skipped, The (battre mon coeur s'est arrêté, De)",
+    "description": "quis lectus suspendisse potenti in eleifend quam a odio in hac habitasse platea",
+    "available": true
+  },
+  {
+    "id": 45,
+    "title": "Mad Bastards",
+    "description": "dui maecenas tristique est et tempus semper est quam pharetra magna ac consequat metus sapien",
+    "available": true
+  },
+  {
+    "id": 46,
+    "title": "Abraham's Valley (Vale Abraão)",
+    "description": "nec dui luctus rutrum nulla tellus in sagittis dui vel nisl duis ac nibh",
+    "available": true
+  },
+  {
+    "id": 47,
+    "title": "Jodorowsky's Dune",
+    "description": "nec nisi vulputate nonummy maecenas tincidunt lacus at velit vivamus vel nulla eget eros elementum pellentesque quisque",
+    "available": true
+  },
+  {
+    "id": 48,
+    "title": "Serpico",
+    "description": "accumsan tortor quis turpis sed ante vivamus tortor duis mattis",
+    "available": false
+  },
+  {
+    "id": 49,
+    "title": "Business of Fancydancing, The",
+    "description": "magna vulputate luctus cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus vivamus vestibulum sagittis sapien",
+    "available": true
+  },
+  {
+    "id": 50,
+    "title": "Choices",
+    "description": "amet nunc viverra dapibus nulla suscipit ligula in lacus curabitur",
+    "available": true
+  },
+  {
+    "id": 51,
+    "title": "Arsenic and Old Lace",
+    "description": "dignissim vestibulum vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae",
+    "available": true
+  },
+  {
+    "id": 52,
+    "title": "Delta Force, The",
+    "description": "mauris ullamcorper purus sit amet nulla quisque arcu libero rutrum ac lobortis vel dapibus at diam nam tristique",
+    "available": true
+  },
+  {
+    "id": 53,
+    "title": "These Are the Damned (a.k.a. The Damned)",
+    "description": "nulla elit ac nulla sed vel enim sit amet nunc viverra dapibus nulla suscipit ligula in lacus curabitur at",
+    "available": true
+  },
+  {
+    "id": 54,
+    "title": "Education, An",
+    "description": "et ultrices posuere cubilia curae mauris viverra diam vitae quam",
+    "available": true
+  },
+  {
+    "id": 55,
+    "title": "Bomber",
+    "description": "mattis pulvinar nulla pede ullamcorper augue a suscipit nulla elit ac nulla sed vel",
+    "available": true
+  },
+  {
+    "id": 56,
+    "title": "Winnie the Pooh",
+    "description": "pretium iaculis justo in hac habitasse platea dictumst etiam faucibus cursus urna ut",
+    "available": true
+  },
+  {
+    "id": 57,
+    "title": "Dead Man's Bluff",
+    "description": "eros vestibulum ac est lacinia nisi venenatis tristique fusce congue diam id ornare imperdiet sapien urna",
+    "available": true
+  },
+  {
+    "id": 58,
+    "title": "Creep",
+    "description": "rutrum at lorem integer tincidunt ante vel ipsum praesent blandit lacinia",
+    "available": false
+  },
+  {
+    "id": 59,
+    "title": "SS Experiment Love Camp (Lager SSadis Kastrat Kommandantur)",
+    "description": "in hac habitasse platea dictumst etiam faucibus cursus urna ut tellus nulla ut erat",
+    "available": true
+  },
+  {
+    "id": 60,
+    "title": "Blazing Guns",
+    "description": "quam nec dui luctus rutrum nulla tellus in sagittis dui vel nisl duis ac nibh",
+    "available": true
+  },
+  {
+    "id": 61,
+    "title": "California",
+    "description": "platea dictumst etiam faucibus cursus urna ut tellus nulla ut erat id mauris",
+    "available": true
+  },
+  {
+    "id": 62,
+    "title": "Hypnotist, The (Hypnotisören)",
+    "description": "curae donec pharetra magna vestibulum aliquet ultrices erat tortor sollicitudin mi sit amet lobortis sapien sapien non",
+    "available": false
+  },
+  {
+    "id": 63,
+    "title": "Farewell My Concubine (Ba wang bie ji)",
+    "description": "in libero ut massa volutpat convallis morbi odio odio elementum eu interdum eu",
+    "available": false
+  },
+  {
+    "id": 64,
+    "title": "On the Edge (Hak bak do)",
+    "description": "vitae nisl aenean lectus pellentesque eget nunc donec quis orci eget",
+    "available": false
+  },
+  {
+    "id": 65,
+    "title": "Sheepman, The",
+    "description": "pede venenatis non sodales sed tincidunt eu felis fusce posuere felis sed lacus morbi sem",
+    "available": true
+  },
+  {
+    "id": 66,
+    "title": "King, The",
+    "description": "pretium iaculis justo in hac habitasse platea dictumst etiam faucibus cursus urna ut",
+    "available": true
+  },
+  {
+    "id": 67,
+    "title": "Once Upon a Time in Anatolia (Bir zamanlar Anadolu'da)",
+    "description": "ultrices enim lorem ipsum dolor sit amet consectetuer adipiscing elit proin interdum mauris non ligula pellentesque ultrices phasellus",
+    "available": false
+  },
+  {
+    "id": 68,
+    "title": "Ernest Saves Christmas",
+    "description": "curabitur in libero ut massa volutpat convallis morbi odio odio elementum",
+    "available": false
+  },
+  {
+    "id": 69,
+    "title": "Kill Buljo: The Movie",
+    "description": "integer ac leo pellentesque ultrices mattis odio donec vitae nisi nam",
+    "available": true
+  },
+  {
+    "id": 70,
+    "title": "Cider House Rules, The",
+    "description": "aliquam lacus morbi quis tortor id nulla ultrices aliquet maecenas leo odio condimentum id luctus nec molestie sed",
+    "available": true
+  },
+  {
+    "id": 71,
+    "title": "$9.99",
+    "description": "nullam molestie nibh in lectus pellentesque at nulla suspendisse potenti cras in purus eu magna vulputate luctus cum sociis",
+    "available": true
+  },
+  {
+    "id": 72,
+    "title": "Body of Water (Syvälle salattu)",
+    "description": "porta volutpat quam pede lobortis ligula sit amet eleifend pede libero quis orci nullam molestie nibh in lectus",
+    "available": false
+  },
+  {
+    "id": 73,
+    "title": "Lumberjacking (Nuoruuteni savotat)",
+    "description": "ac enim in tempor turpis nec euismod scelerisque quam turpis adipiscing lorem vitae mattis nibh ligula",
+    "available": true
+  },
+  {
+    "id": 74,
+    "title": "What to Do in Case of Fire (Was tun, wenn's brennt?)",
+    "description": "rhoncus mauris enim leo rhoncus sed vestibulum sit amet cursus id",
+    "available": true
+  },
+  {
+    "id": 75,
+    "title": "Kabul Express",
+    "description": "pellentesque volutpat dui maecenas tristique est et tempus semper est quam pharetra magna ac consequat metus",
+    "available": false
+  },
+  {
+    "id": 76,
+    "title": "Chopper",
+    "description": "magna bibendum imperdiet nullam orci pede venenatis non sodales sed tincidunt eu",
+    "available": false
+  },
+  {
+    "id": 77,
+    "title": "Humanoids from the Deep",
+    "description": "sed accumsan felis ut at dolor quis odio consequat varius integer ac leo pellentesque",
+    "available": true
+  },
+  {
+    "id": 78,
+    "title": "Hanna",
+    "description": "molestie nibh in lectus pellentesque at nulla suspendisse potenti cras in purus eu",
+    "available": true
+  },
+  {
+    "id": 79,
+    "title": "Reefer Madness (a.k.a. Tell Your Children)",
+    "description": "accumsan tortor quis turpis sed ante vivamus tortor duis mattis egestas metus aenean fermentum",
+    "available": true
+  },
+  {
+    "id": 80,
+    "title": "La Luna",
+    "description": "bibendum felis sed interdum venenatis turpis enim blandit mi in porttitor pede justo",
+    "available": false
+  },
+  {
+    "id": 81,
+    "title": "It! The Terror from Beyond Space",
+    "description": "nisl nunc rhoncus dui vel sem sed sagittis nam congue risus semper",
+    "available": false
+  },
+  {
+    "id": 82,
+    "title": "Millions Game, The (Das Millionenspiel)",
+    "description": "vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia",
+    "available": true
+  },
+  {
+    "id": 83,
+    "title": "Basket Case",
+    "description": "ipsum dolor sit amet consectetuer adipiscing elit proin risus praesent lectus vestibulum quam sapien varius",
+    "available": true
+  },
+  {
+    "id": 84,
+    "title": "Letter to Momo, A (Momo e no tegami)",
+    "description": "pede justo lacinia eget tincidunt eget tempus vel pede morbi porttitor lorem id ligula suspendisse ornare consequat lectus",
+    "available": true
+  },
+  {
+    "id": 85,
+    "title": "Story of the Late Chrysanthemums, The (Zangiku monogatari)",
+    "description": "et tempus semper est quam pharetra magna ac consequat metus sapien",
+    "available": true
+  },
+  {
+    "id": 86,
+    "title": "Angels Crest",
+    "description": "erat nulla tempus vivamus in felis eu sapien cursus vestibulum proin",
+    "available": false
+  },
+  {
+    "id": 87,
+    "title": "Tequila Sunrise",
+    "description": "mi sit amet lobortis sapien sapien non mi integer ac neque duis bibendum morbi non quam",
+    "available": true
+  },
+  {
+    "id": 88,
+    "title": "Black Sea",
+    "description": "proin interdum mauris non ligula pellentesque ultrices phasellus id sapien in sapien iaculis congue vivamus",
+    "available": false
+  },
+  {
+    "id": 89,
+    "title": "Towering Inferno, The",
+    "description": "at ipsum ac tellus semper interdum mauris ullamcorper purus sit amet nulla quisque arcu libero rutrum ac",
+    "available": false
+  },
+  {
+    "id": 90,
+    "title": "Rapid Fire",
+    "description": "donec dapibus duis at velit eu est congue elementum in",
+    "available": false
+  },
+  {
+    "id": 91,
+    "title": "Charleston",
+    "description": "sapien quis libero nullam sit amet turpis elementum ligula vehicula consequat",
+    "available": true
+  },
+  {
+    "id": 92,
+    "title": "Mother Dao, the Turtlelike (Moeder Dao, de schildpadgelijkende)",
+    "description": "potenti nullam porttitor lacus at turpis donec posuere metus vitae ipsum aliquam non mauris",
+    "available": false
+  },
+  {
+    "id": 93,
+    "title": "Black Orchid, The",
+    "description": "tempus sit amet sem fusce consequat nulla nisl nunc nisl duis bibendum felis sed interdum venenatis turpis",
+    "available": true
+  },
+  {
+    "id": 94,
+    "title": "Get Real",
+    "description": "pretium iaculis justo in hac habitasse platea dictumst etiam faucibus cursus urna ut tellus nulla ut erat",
+    "available": true
+  },
+  {
+    "id": 95,
+    "title": "Election Day",
+    "description": "phasellus id sapien in sapien iaculis congue vivamus metus arcu adipiscing molestie hendrerit at vulputate vitae",
+    "available": true
+  },
+  {
+    "id": 96,
+    "title": "Von Ryan's Express",
+    "description": "sodales scelerisque mauris sit amet eros suspendisse accumsan tortor quis turpis sed ante vivamus tortor duis",
+    "available": true
+  },
+  {
+    "id": 97,
+    "title": "One Way Boogie Woogie",
+    "description": "faucibus orci luctus et ultrices posuere cubilia curae mauris viverra diam vitae quam suspendisse potenti nullam porttitor lacus at turpis",
+    "available": false
+  },
+  {
+    "id": 98,
+    "title": "Valet, The (La doublure)",
+    "description": "nulla tellus in sagittis dui vel nisl duis ac nibh fusce lacus purus aliquet at",
+    "available": true
+  },
+  {
+    "id": 99,
+    "title": "Umberto D.",
+    "description": "condimentum curabitur in libero ut massa volutpat convallis morbi odio odio elementum eu interdum eu tincidunt in leo maecenas pulvinar",
+    "available": true
+  },
+  {
+    "id": 100,
+    "title": "Tunes of Glory",
+    "description": "ante nulla justo aliquam quis turpis eget elit sodales scelerisque",
+    "available": true
   }
-});
+  ]
+}
+
+  export default new Vuex.Store({
+    state: {
+
+      movies: movies(),
+
+      filter: {
+        query: '',
+        available: true
+      }
+
+    },
+
+    mutations: {
+
+      SET_QUERY(state, query) {
+        state.filter.query = query;
+      },
+
+      SET_AVAILABLE(state) {
+        state.filter.available = !state.filter.available;
+      }
+
+    },
+
+    getters: {
+      filteredMovies(state) {
+        let movies = state.movies.filter(movie => movie.available === state.filter.available);
+        if (state.filter.query.length > 2) {
+          return movies.filter(movie => movie.title.toLowerCase().includes(state.filter.query));
+        }
+        return movies;
+      }
+    }
+  })
