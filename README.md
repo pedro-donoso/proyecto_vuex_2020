@@ -1,4 +1,4 @@
-# otro_vuex
+# Buscador de Peliculas con VUEX
 
 ## Project setup
 ```
