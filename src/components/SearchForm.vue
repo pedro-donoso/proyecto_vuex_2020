@@ -33,31 +33,27 @@
 
 <script>
 export default {
-
   computed: {
     search: {
-      get(){
+      get() {
         return this.$store.state.filter.query;
       },
 
-      set(val){
-        this.$store.commit('SET_QUERY', val);
-      }
+      set(val) {
+        this.$store.commit("SET_QUERY", val);
+      },
     },
 
     available: {
       get() {
-         this.$store.state.filter.available;
+        return this.$store.state.filter.available;
       },
       set() {
-        this.$store.commit('SET_AVAILABLE');
-      }
-    }
-
-
+        this.$store.commit("SET_AVAILABLE");
+      },
+    },
   },
-
 };
 </script>
 
-<style></style>
+<style lang="scss"></style>

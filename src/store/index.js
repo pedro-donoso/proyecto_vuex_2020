@@ -813,7 +813,7 @@ export default new Vuex.Store({
 
     movies: movies(),
 
-    filters: {
+    filter: {
       query: '',
       available: true
     }
@@ -823,11 +823,11 @@ export default new Vuex.Store({
   mutations: {
 
     SET_QUERY(state, query) {
-      state.filters.query = query;
+      state.filter.query = query;
     },
 
     SET_AVAILABLE(state) {
-      state.filters.available = !state.filters.available;
+      state.filter.available = !state.filter.available;
     }
 
   },
