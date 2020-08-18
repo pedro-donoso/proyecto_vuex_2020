@@ -2,7 +2,7 @@
   <div>
     <h1 class="text-center text-muted">Buscador con Vuex</h1>
     <search-form></search-form>
-    <hr />
+    <hr>
     <movie-list></movie-list>
   </div>
 </template>
@@ -18,5 +18,7 @@ export default {
     }
 }
 </script>
-<style>
+
+<style lang="scss">
+  
 </style>
