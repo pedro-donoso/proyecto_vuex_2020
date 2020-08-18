@@ -2,11 +2,11 @@
   <div class="row">
     <div class="col">
       <div class="form-group mb-2">
-        <label class="sr-only">Escribe tus busquedas</label>
-        <input type="text" v-model="search" class="form-control" />
+  
+        <input type="text" v-model="search" class="buscador__texto form-control" placeholder="ingresa mínimo 3 letras"/>
       </div>
 
-      <div class="form-check form-check-inline">
+      <div class="form-check form-check-inline mb-2">
         <input
           class="form-radio-input"
           v-model="available"
@@ -14,7 +14,10 @@
           type="radio"
         />
 
-        Disponible
+<div class="buscador__selector">
+Disponible
+</div>
+        
       </div>
 
       <div class="form-check form-check-inline">
@@ -25,9 +28,17 @@
           type="radio"
         />
 
-        No disponible
+<div class="buscador__selector">
+No disponible
+</div>
+        
       </div>
+
+
+
     </div>
+
+
   </div>
 </template>
 
@@ -56,4 +67,14 @@ export default {
 };
 </script>
 
-<style lang="scss"></style>
+<style lang="scss">
+
+.buscador__texto{
+  text-align: center;
+}
+
+.buscador__selector{
+  margin-left: 1rem;;
+}
+
+</style>

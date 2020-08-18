@@ -1,7 +1,12 @@
 <template>
   <div>
-    <h1 class="text-center text-muted">Buscador con Vuex</h1>
-    <search-form></search-form>
+  <div class="container" id="hero-section">
+  <h2 class="text-center buscador__title">Buscador con Vuex</h2>
+    <h6 class="text-muted">* 100 peliculas de ejemplo, disponibilidad según API</h6>
+  <div class="buscador">
+   <search-form></search-form>
+ </div>
+  </div>
     <hr>
     <movie-list></movie-list>
   </div>
@@ -20,5 +25,14 @@ export default {
 </script>
 
 <style lang="scss">
-  
+  #hero-section{
+    border: solid 1px red;
+    background: yellowgreen;
+  }
+
+.buscador__title{
+  color: blue;
+}
+
+
 </style>

@@ -24,5 +24,20 @@ export default {
 </script>
 
 <style lang="scss">
-  
+
+
+
+  .card-header{
+    background: cyan;
+  }
+
+  .card-title{
+    color: red;
+  }
+
+.card-body{
+  background: gray;
+  color: white;
+}
+
 </style>
