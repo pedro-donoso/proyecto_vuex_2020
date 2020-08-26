@@ -1,4 +1,4 @@
-# [https://musing-snyder-82f8be.netlify.app](https://musing-snyder-82f8be.netlify.app/)
+# [https://vuex-peliculas.netlify.app](https://vuex-peliculas.netlify.app/)
 
 # Buscador de Peliculas con VUEX
 
