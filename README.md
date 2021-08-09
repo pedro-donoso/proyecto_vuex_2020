@@ -1,4 +1,4 @@
-# [https://vuex-peliculas.netlify.app](https://vuex-peliculas.netlify.app)
+## [https://vuex-peliculas.netlify.app](https://vuex-peliculas.netlify.app)
 
 ![](https://user-images.githubusercontent.com/68760595/128256013-e3a2e7fe-f5b7-4bf4-9f49-997f953caf2b.PNG)
 
